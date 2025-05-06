@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Saiful Islam | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background: linear-gradient(135deg, #6e45e2, #88d3ce);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    .nav-links li {
+        position: relative;
+    }
+    .nav-links a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        padding: 8px 12px;
+        transition: 0.3s;
+    }
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: rgba(110, 69, 226, 0.95);
+            flex-direction: column;
+            width: 200px;
+            display: none;
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+
+        .menu-toggle {
+            display: block;
+        }
+
+        .nav-active {
+            display: flex;
+        }
+    }
+
+    /* Home Page Content */
+    .container {
+        max-width: 1000px;
+        margin: 20px auto 25px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        text-align: left;
+    }
+
+    .profile-img {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-top: 20px;
+        border: 5px solid #007bff;
+        align-items: right;
+    }
+
+    h1 {
+        font-size: 36px;
+        color: #007bff;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+        color: #555;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 18px;
+        color: #666;
+        max-width: 800px;
+        margin: 10px auto;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #0056b3;
+    }
+</style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Saiful Islam</div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="achivement.html">Achievement</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- Home Page Content -->
+    <div class="container">
+        <!--<img src="https://drive.google.com/thumbnail?id=1W666HbS5XX9xW3To1KIhbrFxOraAo6kE" alt="Saiful Islam" class="profile-img">
+        --><img src="img/hero.png" alt="Saiful Islam" class="profile-img" align="right">
+        <h1>Saiful Islam</h1>
+        <h2>Competitive Programmer | CSE Student | Tech Enthusiast</h2>
+        <p>Hello! I am Saiful Islam, a passionate competitive programmer and a Computer Science & Engineering student at Sylhet Engineering College. I love solving algorithmic problems and striving to excel in the world of competitive programming.</p>
+        <a href="achievement" class="btn">View My Achievements</a>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>

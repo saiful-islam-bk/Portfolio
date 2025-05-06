@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Achievements | Saiful Islam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background-color: #f5f5f5;
+        color: #333;
+    }
+
+    /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background: linear-gradient(135deg, #6e45e2, #88d3ce);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    .nav-links li {
+        position: relative;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        padding: 8px 12px;
+        transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: rgba(110, 69, 226, 0.95);
+            flex-direction: column;
+            width: 200px;
+            display: none;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+        .menu-toggle {
+            display: block;
+        }
+        .nav-active {
+            display: flex;
+        }
+    }
+    /* Achievement Styles */
+    .container {
+        max-width: 1000px;
+        margin: 20px auto 25px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+        text-align: center;
+        font-weight: 700;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+    .achievement-category {
+        margin-top: 30px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid #007bff;
+        font-size: 24px;
+        font-weight: 700;
+        color: #007bff;
+    }
+    .achievement-item {
+        background: #ffffff;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .achievement-item:hover {
+        background: #f0f8ff;
+        transform: translateY(-3px);
+    }
+    .achievement-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #222;
+    }
+    .achievement-rank {
+        font-size: 16px;
+        color: #555;
+    }
+    a {
+        color: #007bff;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+</style>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Saiful Islam</div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="achivement.html">Achievement</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Achievements</h1>
+
+        <div class="achievement-category">Competitive Programming</div>
+        <div class="achievement-item">
+            <div class="achievement-title">ICPC Preliminary 2024</div>
+            <div class="achievement-rank">Ranked 295th out of 2500+ teams (Team: SEC Odd Bit) - <a href="https://icpc.global/">ICPC Website</a></div>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-title">MU IUPC 2024</div>
+            <div class="achievement-rank">Ranked 22nd out of 35+ teams (Team: SEC Odd Bit)</div>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-title">LU IUJPC 2024</div>
+            <div class="achievement-rank">Ranked 6th out of 39+ teams (Team: SEC Infra Red)</div>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-title">SEC CSE Day 2024</div>
+            <div class="achievement-rank">Ranked 4th out of 35+ teams (Team: SEC Giants) - Awarded: Rising Team of the Contest</div>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-title">UIU IUPC 2025</div>
+            <div class="achievement-rank">Ranked 71st out of 160 teams (Team: SEC Pantasma)</div>
+        </div>
+
+        <div class="achievement-category">Competitive Programming Ratings</div>
+        <div class="achievement-item">
+            <div class="achievement-title">Codeforces</div>
+            <div class="achievement-rank">Achieved Specialist - Highest Rating: 1439 - <a href="https://codeforces.com/profile/saiful_islam_bk">View Profile</a></div>
+        </div>
+        <div class="achievement-item">
+            <div class="achievement-title">CodeChef</div>
+            <div class="achievement-rank">Achieved 3? - Highest Rating: 1734 - <a href="https://www.codechef.com/users/saiful_islam_bk">View Profile</a></div>
+        </div>
+
+        <div class="achievement-category">Mathematics & Olympiads</div>
+        <div class="achievement-item">
+            <div class="achievement-title">Bangladesh Math Olympiad Regional</div>
+            <div class="achievement-rank">Participated in 2020, 2021, and 2022 - <a href="https://www.matholympiad.org.bd/">Math Olympiad</a></div>
+        </div>
+
+        <div class="achievement-category">Projects</div>
+        <div class="achievement-item">
+            <div class="achievement-title">Hotel Management System (2024)</div>
+            <div class="achievement-rank">Developed with Md. Ibrahim and Shameema Akter - Features: Efficient room management, customer management, and a user-friendly interface</div>
+        </div>
+    </div>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-active');
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Saiful Islam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body {
+        background-color: #f5f5f5;
+        color: #333;
+    }
+    /* Navbar Styles */
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 50px;
+        background: linear-gradient(135deg, #6e45e2, #88d3ce);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+    .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+    }
+    .nav-links li {
+        position: relative;
+    }
+    .nav-links a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        padding: 8px 12px;
+        transition: 0.3s;
+    }
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 5px;
+    }
+    .menu-toggle {
+        display: none;
+        font-size: 24px;
+        color: #fff;
+        cursor: pointer;
+    }
+    @media (max-width: 768px) {
+        .nav-links {
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background: rgba(110, 69, 226, 0.95);
+            flex-direction: column;
+            width: 200px;
+            display: none;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .nav-links li {
+            margin-bottom: 10px;
+        }
+        .menu-toggle {
+            display: block;
+        }
+        .nav-active {
+            display: flex;
+        }
+    }
+    /* about style */
+    .container {
+        max-width: 1000px;
+        margin: 20px auto 25px;
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    .box {
+        margin: 20px auto 25px;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: #007bff;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 24px;
+        color: #555;
+        font-weight: 400;
+    }
+
+    p {
+        font-size: 18px;
+        color: #666;
+        max-width: 800px;
+        margin: 10px auto;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 10px 20px;
+        font-size: 18px;
+        background: #007bff;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #0056b3;
+    }
+</style>
+<body class="bg-gray-100 text-gray-900 font-[Inter]">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Saiful Islam</div>
+        <ul class="nav-links" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="achivement.html">Achievement</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <!-- About Section -->
+    <div class="container">
+    <section class="box">
+        <h1 class="text-4xl font-bold text-blue-600 mb-6">About Me</h1>
+        <p class="text-lg leading-relaxed mb-4">
+            I'm <strong>Saiful Islam</strong>, a passionate Competitive Programmer from
+            <strong>Sylhet Engineering College</strong>, currently studying Computer
+            Science and Engineering. I dream of becoming an <strong>ICPC World Champion
+            </strong>. I've already participated in multiple contests like ICPC
+            Preliminary, MU IUPC, LU IUPC, and UIU IUPC. I'm a <strong>Specialist on
+            Codeforces</strong> and <strong>3* on CodeChef</strong>.
+        </p>
+        <p class="text-lg leading-relaxed mb-4">
+            I'm deeply thankful to my all senior bhai and my batchmate for helping
+            whenever I needed it, and to the <strong>SEC Programming Club</strong>
+            for always supporting me � especially for giving me access to a PC in
+            the ACM Lab.
+        </p>
+        <p class="text-lg leading-relaxed">
+            My goal is to keep improving, solve tougher problems, and represent
+            Bangladesh at the highest stages of the competitive programming world.
+            Let's get that gold!
+        </p>
+    </section>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-white mt-16 shadow-inner">
+        <div class="max-w-7xl mx-auto py-6 px-4 text-center text-gray-500">
+            &copy; 2025 Saiful Islam. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('nav-active');
+        });
+    </script>
+</body>
+</html>
