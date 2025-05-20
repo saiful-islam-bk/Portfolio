@@ -99,10 +99,10 @@
 
     .profile-img {
         width: 300px;
-        height: 300px;
+        height: 310px;
         border-radius: 50%;
         object-fit: cover;
-        margin-top: 20px;
+        margin-top: 0px;
         border: 5px solid #007bff;
         align-items: right;
     }
@@ -137,9 +137,36 @@
         border-radius: 8px;
         transition: 0.3s;
     }
+    .btn:not(:last-child) {
+        margin-right: 30px;
+    }
 
     .btn:hover {
         background: #0056b3;
+    }
+
+    .section {
+        /*max-width: 800px; */
+        margin: 50px auto;
+        padding: 0 20px;
+    }
+
+    .section h2 {
+        /*font-size: 24px;
+        color: #555;
+        font-weight: 400;*/
+        font-size: 2rem;
+        border-bottom: 2px solid #38bdf8;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .section ul {
+        font-size: 18px;
+        list-style: square;
+        padding-left: 20px;
+        color: #555;
+        line-height: 1.8;
     }
 </style>
 </head>
@@ -162,17 +189,33 @@
 
     <!-- Home Page Content -->
     <div class="container">
-        <!--<img src="https://drive.google.com/thumbnail?id=1W666HbS5XX9xW3To1KIhbrFxOraAo6kE" alt="Saiful Islam" class="profile-img">
-        --><img src="img/hero.png" alt="Saiful Islam" class="profile-img" align="right">
+        <!--<img src="https://drive.google.com/thumbnail?id=1W666HbS5XX9xW3To1KIhbrFxOraAo6kE" alt="Saiful Islam" class="profile-img">-->
         <h1>Saiful Islam</h1>
+        <img src="img/hero.png" alt="Saiful Islam" class="profile-img" align="right">
         <h2>Competitive Programmer | CSE Student | Tech Enthusiast</h2>
         <p>Hello! I am Saiful Islam, a passionate competitive programmer and a Computer
         Science & Engineering student at Sylhet Engineering College. I love solving
         algorithmic problems and striving to excel in the world of competitive programming.
         </p>
-        <a href="achievement" class="btn">View My Achievements</a>
-    </div>
+        <div align="center">
+            <a href="achievement" class="btn">Download CV </a>
+            <a href="achievement" class="btn"> View My Achievements</a>
+        </div>
+      <!--</div> -->
 
+    <section class="section">
+        <h2>🎯 My Goals</h2>
+        <ul>
+            <li>Qualify for the ICPC World Finals 🌍</li>
+            <li>Become a top-rated coder on Codeforces & CodeChef 🚀</li>
+            <li>Build real-world projects using MERN stack 🛠️</li>
+            <li>Represent Sylhet Engineering College in National Contests </li>
+            <li>Represent Bangladesh in International Contests </li>
+            <li>Master advanced data structures & algorithms 📚</li>
+            <li>Contribute to open-source & help the CP community 💡</li>
+        </ul>
+    </section>
+    </div>
     <script>
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
