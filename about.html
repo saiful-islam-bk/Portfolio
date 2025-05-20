@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Saiful Islam</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About - Saiful Islam</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/media.css" />
+
+
 </head>
 <style>
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
     }
     body {
-        background-color: #f5f5f5;
-        color: #333;
+            background-color: #f5f5f5;
+            color: #333;
     }
     /* Navbar Styles */
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 50px;
-        background: linear-gradient(135deg, #6e45e2, #88d3ce);
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background: linear-gradient(135deg, #6e45e2, #88d3ce);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     .logo {
-        font-size: 24px;
-        font-weight: bold;
-        color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
     }
     .nav-links {
-        list-style: none;
-        display: flex;
-        gap: 25px;
+            list-style: none;
+            display: flex;
+            gap: 25px;
     }
     .nav-links li {
-        position: relative;
+            position: relative;
     }
     .nav-links a {
-        text-decoration: none;
-        font-size: 18px;
-        color: white;
-        padding: 8px 12px;
-        transition: 0.3s;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            padding: 8px 12px;
+            transition: 0.3s;
     }
     .nav-links a:hover {
-        background: rgba(255, 255, 255, 0.2);
-        border-radius: 5px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
     }
     .menu-toggle {
-        display: none;
-        font-size: 24px;
-        color: #fff;
-        cursor: pointer;
+            display: none;
+            font-size: 24px;
+            color: #fff;
+            cursor: pointer;
     }
     @media (max-width: 768px) {
         .nav-links {
@@ -71,18 +75,18 @@
             border-radius: 8px;
         }
         .nav-links li {
-            margin-bottom: 10px;
+                margin-bottom: 10px;
         }
         .menu-toggle {
-            display: block;
+                display: block;
         }
         .nav-active {
-            display: flex;
+                display: flex;
         }
     }
     /* about style */
     .container {
-        max-width: 1000px;
+        max-width: 1135px;
         margin: 20px auto 25px;
         padding: 20px;
         background: #fff;
@@ -95,7 +99,7 @@
     }
 
     h1 {
-        text-align: center;
+        text-align: left;
         font-size: 36px;
         font-weight: 700;
         color: #007bff;
@@ -127,8 +131,97 @@
         transition: 0.3s;
     }
 
+    .btn:not(:last-child) {
+        margin-right: 30px;
+    }
+
     .btn:hover {
         background: #0056b3;
+    }
+    /* Hero section */
+    .hero {
+        position: relative;
+        padding-top: 180px;
+        background-color: var(--primary-bg-color);
+    }
+
+    .hero-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-content {
+        text-align: left;
+        align-self: center;
+        padding: 20px;
+        flex-grow: 1;
+    }
+
+    .hero-greeting {
+        font-size: clamp(1rem, 0.929rem + 0.36vw, 1.25rem);
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--secondary-accent);
+    }
+
+    .hero-heading {
+        margin: 5px 0;
+        font-weight: 500;
+        font-size: clamp(3.25rem, 2.75rem + 2.5vw, 5rem);
+        line-height: 1.2;
+    }
+
+    .hero-heading-subtitle {
+        font-size: clamp(1.125rem, 1.054rem + 0.36vw, 1.375rem);
+        font-weight: 400;
+    }
+
+    .hero-img {
+            width: 300px;
+            height: 310px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-top: 0px;
+            border: 5px solid #007bff;
+            align-items: right;
+        justify-content: right;
+      /*  display: flex;
+        flex: 1 1 356px;
+        margin-top: auto;*/
+    }
+
+    /*.hero-img img {
+        display: block;
+        position: relative;
+    }*/
+    .about-social-list {
+        display: flex;
+    }
+
+    .social-links-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        margin: 40px 0 40px;
+        height: 24px;
+
+        img {
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    .social-links-row a {
+        filter: invert(35%) sepia(11%) saturate(160%) hue-rotate(145deg)
+            brightness(88%) contrast(80%);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .social-links-row a:hover {
+        filter: invert(0%) sepia(0%) saturate(7500%) hue-rotate(305deg)
+            brightness(97%) contrast(103%);
     }
 </style>
 <body class="bg-gray-100 text-gray-900 font-[Inter]">
@@ -148,17 +241,51 @@
     </nav>
 
 
-    <!-- About Section -->
     <div class="container">
-    <section class="box">
-        <h1 class="text-4xl font-bold text-blue-600 mb-6">About Me</h1>
-        <p class="text-lg leading-relaxed mb-4">
-            I'm <strong>Saiful Islam</strong>, a passionate Competitive Programmer from
-            <strong>Sylhet Engineering College</strong>, currently studying Computer
-            Science and Engineering. I dream of becoming an <strong>ICPC World Champion
-            </strong>. I've already participated in multiple contests like ICPC
-            Preliminary, MU IUPC, LU IUPC, and UIU IUPC. I'm a <strong>Specialist on
-            Codeforces</strong> and <strong>3* on CodeChef</strong>.
+        <div
+            class="hero-row"
+            data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-out"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+        >
+        <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">Saiful Islam</h1>
+        <div class="hero-img">
+            <img src="img/hero.png" alt="Saiful Islam" class="hero-img" align="right"/>
+        </div>
+            <span class="hero-heading-subtitle">
+                    Competitive Programmer & Software Developer
+            </span>
+            <div class="about-social-list">
+            <div class="social-links-row">
+            <a href="https://github.com/saiful-islam-bk">
+                <img src="img/github.svg" alt="GitHub"/>
+            </a>
+            <a href="www.linkedin.com/in/saiful-islam-bk">
+                <img src="img/linkedin.svg"  alt="linkedin"/>
+            </a>
+            <a href="https://www.facebook.com/islam.saiful.bk">
+                <img src="img/facebook.svg" alt="facebook"/>
+            </a>
+            <a href="https://www.instagram.com/islam.saiful.bk/">
+                <img src="img/instagram.svg" alt="instagram"/>
+            </a>
+            </div>
+            </div>
+
+            <div align:"center">
+                <a href="#projects" class="btn">My Portfolio</a>
+                <a href="#contact" class="btn">Contact Me</a>
+            </div>
+        </div>
+        <p class="about-descr">A passionate Competitive Programmer from
+        <strong>Sylhet Engineering College</strong>, currently studying Computer
+        Science and Engineering. I dream of becoming an <strong>ICPC World Champion
+        </strong>. I've already participated in multiple contests like ICPC
+        Preliminary, MU IUPC, LU IUPC, and UIU IUPC. I'm a <strong>Specialist on
+        Codeforces</strong> and <strong>3* on CodeChef</strong>.
         </p>
         <p class="text-lg leading-relaxed mb-4">
             I'm deeply thankful to my all senior bhai and my batchmate for helping
@@ -171,14 +298,8 @@
             Bangladesh at the highest stages of the competitive programming world.
             Let's get that gold!
         </p>
-        <div class="hero-img">
-            <img
-              src="img/hero.png"
-              alt="Picture of Christian Buehner taken from Unsplash</a>
-              "
-            />
-          </div>
-    </section>
+
+        </div>
     </div>
     <!-- Footer -->
     <footer class="bg-white mt-16 shadow-inner">
@@ -190,7 +311,7 @@
         const menuToggle = document.getElementById('menuToggle');
         const navMenu = document.getElementById('navMenu');
         menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('nav-active');
+                navMenu.classList.toggle('nav-active');
         });
     </script>
 </body>
